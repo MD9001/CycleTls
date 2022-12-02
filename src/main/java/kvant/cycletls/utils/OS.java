@@ -12,7 +12,9 @@ public enum OS {
             return WINDOWS;
         else if (name.contains("mac"))
             return MAC;
-        else
+        else if (name.contains("nix") || name.contains("nux") || name.contains("aix"))
             return LINUX;
+        else
+            throw new IllegalArgumentException("Unknown OS");
     }
 }

@@ -1,14 +1,12 @@
 package kvant.cycletls;
 
+import kvant.cycletls.browser.ChromeBrowser;
 import kvant.cycletls.con.AsyncTlsChannel;
 import kvant.cycletls.con.TlsChannel;
 import kvant.cycletls.utils.OS;
 
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public final class CycleTls {
     private CycleTls() {}
@@ -37,5 +35,10 @@ public final class CycleTls {
 
     public static TlsChannel createChannel() {
         return new TlsChannel();
+    }
+
+    public static void main(String[] args) {
+        var chrome = new ChromeBrowser();
+        System.out.println(chrome.generateUserAgent().toString());
     }
 }
