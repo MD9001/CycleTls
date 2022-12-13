@@ -1,6 +1,5 @@
 package kvant.cycletls;
 
-import kvant.cycletls.browser.ChromeBrowser;
 import kvant.cycletls.con.AsyncTlsChannel;
 import kvant.cycletls.con.TlsChannel;
 import kvant.cycletls.utils.OS;
@@ -35,10 +34,5 @@ public final class CycleTls {
 
     public static TlsChannel createChannel() {
         return new TlsChannel();
-    }
-
-    public static void main(String[] args) {
-        var chrome = new ChromeBrowser();
-        System.out.println(chrome.generateUserAgent().toString());
     }
 }
