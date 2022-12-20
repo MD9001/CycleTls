@@ -1,7 +1,7 @@
 package kvant.cycletls;
 
-import kvant.cycletls.con.AsyncTlsChannel;
-import kvant.cycletls.con.TlsChannel;
+import kvant.cycletls.connection.AsyncTlsChannel;
+import kvant.cycletls.connection.TlsChannel;
 import kvant.cycletls.utils.OS;
 
 import java.io.IOException;

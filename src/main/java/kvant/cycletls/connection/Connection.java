@@ -1,4 +1,4 @@
-package kvant.cycletls.con;
+package kvant.cycletls.connection;
 
 import java.io.Closeable;
 import java.io.IOException;

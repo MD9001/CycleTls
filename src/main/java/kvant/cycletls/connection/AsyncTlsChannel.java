@@ -1,4 +1,4 @@
-package kvant.cycletls.con;
+package kvant.cycletls.connection;
 
 import kvant.cycletls.json.JacksonApi;
 import kvant.cycletls.model.TlsRequest;
